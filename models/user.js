@@ -22,12 +22,10 @@ const userSchema = mongoose.Schema(
       enum: ["user", "admin"],
       default: "user",
     },
-    wishList: [
-      {
-        type: mongoose.Schema.Types.ObjectId,
-        ref: "Products",
-      },
-    ],
+    wishList: {
+      type: mongoose.Schema.Types.ObjectId,
+      ref: "Wishlist",
+    },
     createdAt: {
       type: Date,
       default: Date.now,

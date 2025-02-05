@@ -1,4 +1,5 @@
 const Products = require("../models/product");
+const { model } = require("mongoose");
 
 const addProduct = async (req, res) => {
   try {
@@ -19,7 +20,9 @@ const addProduct = async (req, res) => {
 };
 const getProducts = async (req, res) => {
   try {
-    const product = await Products.find({}).populate("category");
+    const product = await Products.find({})
+      .populate("category")
+      .populate("image");
     if (!product) {
       return res.status(404).json({
         success: false,

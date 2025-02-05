@@ -33,7 +33,6 @@ const productSchema = mongoose.Schema(
       {
         type: mongoose.Schema.Types.ObjectId,
         ref: "Images",
-        default: "Image not available",
       },
     ],
     createdAt: {
