@@ -3,6 +3,7 @@ const {
   addProduct,
   getProducts,
   getProductById,
+  updateProduct,
 } = require("../controllers/product.controller");
 const authMiddleware = require("../middleware/authorization.middleware");
 const adminMiddleware = require("../middleware/admin.middleware");
