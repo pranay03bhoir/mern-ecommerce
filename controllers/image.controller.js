@@ -53,5 +53,28 @@ const imageUpload = async (req, res) => {
     });
   }
 };
-
-module.exports = { imageUpload };
+const imageDelete = async (req, res) => {
+  try {
+    const image = await Image.findById(req.params.id);
+    if (!image) {
+      return res.status(404).json({
+        success: false,
+        message: "Image not found",
+      });
+    } else {
+      await cloudinary.uploader.destroy(image.publicId);
+      await Image.findByIdAndDelete(image._id);
+      res.status(200).json({
+        success: true,
+        message: "Image deleted successfully",
+      });
+    }
+  } catch (e) {
+    console.error(e);
+    res.status(500).json({
+      success: false,
+      message: "Something went wrong",
+    });
+  }
+};
+module.exports = { imageUpload, imageDelete };
