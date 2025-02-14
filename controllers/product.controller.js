@@ -67,6 +67,64 @@ const getProductById = async (req, res) => {
     });
   }
 };
+const getProductByName = async (req, res) => {
+  try {
+    const { name } = req.query;
+    const product = await Products.findOne({
+      name: {
+        $regex: name,
+        $options: "i",
+      },
+    });
+    if (!product) {
+      return res.status(404).json({
+        success: false,
+        message: "Product not found",
+      });
+    } else {
+      res.status(200).json({
+        success: true,
+        message: "Product found",
+        data: product,
+      });
+    }
+  } catch (e) {
+    console.error(e);
+    res.status(500).json({
+      success: false,
+      message: "Some ting went wrong",
+    });
+  }
+};
+const getProductsByBrand = async (req, res) => {
+  try {
+    const { brand } = req.query;
+    const products = await Products.find({
+      brand: {
+        $regex: brand,
+        $options: "i",
+      },
+    });
+    if (!products) {
+      return res.status(404).json({
+        success: false,
+        message: "Products not found",
+      });
+    } else {
+      res.status(200).json({
+        success: true,
+        message: "Products found",
+        data: products,
+      });
+    }
+  } catch (e) {
+    console.error(e);
+    res.status(500).json({
+      success: false,
+      message: "Some error occurred",
+    });
+  }
+};
 const updateProduct = async (req, res) => {
   try {
     const productId = req.params.id;
@@ -132,6 +190,8 @@ module.exports = {
   addProduct,
   getProducts,
   getProductById,
+  getProductByName,
+  getProductsByBrand,
   updateProduct,
   deleteProduct,
 };
