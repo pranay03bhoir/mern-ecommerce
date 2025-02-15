@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="35954f4b-378f-49fc-adbc-509d68f29bbb" name="Changes" comment="Updated routes according to new controller functions.">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/backend/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/backend/.idea/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/git_toolbox_blame.xml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/.idea/git_toolbox_blame.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/git_toolbox_prj.xml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/.idea/git_toolbox_prj.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/.idea/jsLibraryMappings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/mern-ecommerce.iml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/.idea/mern-ecommerce.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/prettier.xml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/.idea/prettier.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/backend/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/cloudinary.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/config/cloudinary.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/category.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/controllers/category.controller.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/image.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/controllers/image.controller.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/product.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/controllers/product.controller.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/user.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/controllers/user.controller.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/wishlist.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/controllers/wishlist.controller.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/dbConnection.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/database/dbConnection.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/helpers/cloudinary.upload.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/helpers/cloudinary.upload.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/middleware/admin.middleware.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/middleware/admin.middleware.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/middleware/authorization.middleware.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/middleware/authorization.middleware.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/middleware/uploadImage.middleware.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/middleware/uploadImage.middleware.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/category.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/models/category.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/images.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/models/images.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/product.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/models/product.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/models/user.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/wishlist.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/models/wishlist.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/backend/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/backend/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/category.route.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/routes/category.route.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/image.routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/routes/image.routes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/product.route.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/routes/product.route.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/user.routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/routes/user.routes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/wishlist.routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/routes/wishlist.routes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/server.js" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;huntersuzuki&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/pranay03bhoir/mern-ecommerce.git&quot;,
+    &quot;accountId&quot;: &quot;0c05315d-c7a2-40e1-85cd-2a81d1613cfc&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
+  <component name="ProjectId" id="2sU1DfvbG0yTsK1oJteR5TOZRxm" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;javascript.nodejs.core.library.configured.version&quot;: &quot;22.12.0&quot;,
+    &quot;javascript.nodejs.core.library.typings.version&quot;: &quot;22.12.0&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/mern-ecommerce&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_interpreter_path&quot;: &quot;node&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;C:\\nvm4w\\nodejs\\node_modules\\prettier&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Program Files\\JetBrains\\WebStorm 2024.3\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mongo&quot;
+    ]
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\mern-ecommerce\backend" />
+    </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-822845ee3bb5-JavaScript-WS-243.23654.157" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="35954f4b-378f-49fc-adbc-509d68f29bbb" name="Changes" comment="" />
+      <created>1738495221223</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1738495221223</updated>
+      <workItem from="1738495222626" duration="9543000" />
+      <workItem from="1738581918579" duration="6661000" />
+      <workItem from="1738654959441" duration="9230000" />
+      <workItem from="1738739514451" duration="14432000" />
+      <workItem from="1738822137490" duration="1204000" />
+      <workItem from="1738835283078" duration="8112000" />
+      <workItem from="1738908051384" duration="2654000" />
+      <workItem from="1738924151771" duration="3682000" />
+      <workItem from="1739184704224" duration="4721000" />
+      <workItem from="1739255768207" duration="5112000" />
+      <workItem from="1739354238780" duration="4474000" />
+      <workItem from="1739442955202" duration="1508000" />
+      <workItem from="1739514850722" duration="5623000" />
+      <workItem from="1739531396250" duration="2744000" />
+      <workItem from="1739614791768" duration="1402000" />
+    </task>
+    <task id="LOCAL-00001" summary="Creating a MERN stack ecommerce app">
+      <option name="closed" value="true" />
+      <created>1738502584193</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1738502584193</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Added functionality where we can add a category.">
+      <option name="closed" value="true" />
+      <created>1738506266234</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1738506266234</updated>
+    </task>
+    <task id="LOCAL-00003" summary="created API endpoints for category.">
+      <option name="closed" value="true" />
+      <created>1738506295676</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1738506295676</updated>
+    </task>
+    <task id="LOCAL-00004" summary="created API endpoints for products.">
+      <option name="closed" value="true" />
+      <created>1738506311088</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1738506311088</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Added functionality where we can add a product.">
+      <option name="closed" value="true" />
+      <created>1738506332621</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1738506332621</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Created a product model with the help of mongoose.">
+      <option name="closed" value="true" />
+      <created>1738506362912</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1738506362912</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Main server file.">
+      <option name="closed" value="true" />
+      <created>1738506375889</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1738506375889</updated>
+    </task>
+    <task id="LOCAL-00008" summary=".......">
+      <option name="closed" value="true" />
+      <created>1738506387784</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1738506387784</updated>
+    </task>
+    <task id="LOCAL-00009" summary="MERN stack ecommerce app.">
+      <option name="closed" value="true" />
+      <created>1738760915085</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1738760915085</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Added a controller function to update the product details">
+      <option name="closed" value="true" />
+      <created>1738837764144</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1738837764144</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Added product update routes with authorization middleware and admin authorization middle ware.">
+      <option name="closed" value="true" />
+      <created>1738837819456</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1738837819456</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Product update controller.">
+      <option name="closed" value="true" />
+      <created>1738837848100</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1738837848100</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Controller function for deleting product.">
+      <option name="closed" value="true" />
+      <created>1738838497548</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1738838497548</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Route for deleting product from the database for with authorization and admin authorization functionality.">
+      <option name="closed" value="true" />
+      <created>1738838548084</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1738838548084</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Controller function for deleting products.">
+      <option name="closed" value="true" />
+      <created>1738838580765</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1738838580765</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Authorization middleware using jsonwebtoken.">
+      <option name="closed" value="true" />
+      <created>1738841996128</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1738841996128</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Function for deleting an image of a product">
+      <option name="closed" value="true" />
+      <created>1739517175868</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1739517175868</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Added CRUD operations function for category.">
+      <option name="closed" value="true" />
+      <created>1739517375061</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1739517375061</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Added CRUD operations function for products.">
+      <option name="closed" value="true" />
+      <created>1739517468886</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1739517468886</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Updated routes according to new controller functions.">
+      <option name="closed" value="true" />
+      <created>1739517496622</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1739517496622</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Creating a MERN stack ecommerce app" />
+    <MESSAGE value="Added functionality where we can add a category." />
+    <MESSAGE value="created API endpoints for category." />
+    <MESSAGE value="created API endpoints for products." />
+    <MESSAGE value="Added functionality where we can add a product." />
+    <MESSAGE value="Created a product model with the help of mongoose." />
+    <MESSAGE value="Main server file." />
+    <MESSAGE value="......." />
+    <MESSAGE value="MERN stack ecommerce app." />
+    <MESSAGE value="Added a controller function to update the product details" />
+    <MESSAGE value="Added product update routes with authorization middleware and admin authorization middle ware." />
+    <MESSAGE value="Product update controller." />
+    <MESSAGE value="Controller function for deleting product." />
+    <MESSAGE value="Route for deleting product from the database for with authorization and admin authorization functionality." />
+    <MESSAGE value="Controller function for deleting products." />
+    <MESSAGE value="Authorization middleware using jsonwebtoken." />
+    <MESSAGE value="Function for deleting an image of a product" />
+    <MESSAGE value="Added CRUD operations function for category." />
+    <MESSAGE value="Added CRUD operations function for products." />
+    <MESSAGE value="Updated routes according to new controller functions." />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated routes according to new controller functions." />
+  </component>
+</project>
