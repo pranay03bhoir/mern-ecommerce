@@ -159,7 +159,7 @@ mern-ecommerce/
   - Redux
   - React Router
   - Axios
-  - Bootstrap
+  - Tailwind CSS
 
 - **Backend**:
   - Node.js
