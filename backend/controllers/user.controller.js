@@ -85,4 +85,31 @@ const loginUser = async (req, res) => {
     });
   }
 };
-module.exports = { registerUser, loginUser };
+const updateUserDetails = async (req, res) => {
+  try {
+    const { fullName, email, password } = req.body;
+    const user = await User.findByIdUpdate(req.params.id, {
+      fullName,
+      email,
+      password,
+    });
+    if (user) {
+      res.status(200).json({
+        success: true,
+        message: "User updated successfully",
+      });
+    } else {
+      res.status(400).json({
+        success: false,
+        message: "Error updating user",
+      });
+    }
+  } catch (error) {
+    console.error(e);
+    res.status(500).json({
+      success: false,
+      message: "Some error occurred",
+    });
+  }
+};
+module.exports = { registerUser, loginUser,updateUserDetails };
